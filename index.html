@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jack Yi — Chemical Engineering, University of Waterloo</title>
+<meta name="description" content="Chemical engineering student at the University of Waterloo. Process, data and the things I build.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12211f;
+    --paper:#fbfaf7;
+    --rule:#c9d2ce;
+    --muted:#5c6b67;
+    --flask:#1d6b5f;
+    --wash:#eef2f0;
+    --measure:64ch;
+  }
+
+  *{box-sizing:border-box}
+
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{animation:none!important;transition:none!important}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:1.0625rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:56rem;margin:0 auto;padding:0 1.5rem}
+
+  /* ---------- masthead ---------- */
+  header{padding:5rem 0 3rem}
+  h1{
+    font-size:clamp(2.4rem,7vw,3.75rem);
+    line-height:1.04;
+    font-weight:600;
+    margin:0 0 1.25rem;
+    letter-spacing:-.02em;
+  }
+  .standfirst{
+    max-width:var(--measure);
+    font-size:1.2rem;
+    color:var(--muted);
+    margin:0 0 2rem;
+  }
+
+  /* the one flourish: a titration-style scale under the masthead */
+  .scale{display:flex;align-items:flex-end;gap:.4rem;height:2.5rem;margin-bottom:2.5rem}
+  .scale i{display:block;width:2px;background:var(--rule)}
+  .scale i:nth-child(5n+1){background:var(--flask)}
+
+  .contact{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.8125rem;
+    display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;
+    margin:0;padding:0;list-style:none;
+  }
+  a{color:var(--flask);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--flask);outline-offset:3px;border-radius:2px}
+
+  /* ---------- sections ---------- */
+  section{padding:3rem 0;border-top:1px solid var(--rule)}
+  h2{
+    font-size:1.5rem;font-weight:600;margin:0 0 2rem;letter-spacing:-.01em;
+  }
+  h3{font-size:1.25rem;font-weight:600;margin:0 0 .4rem}
+  p{max-width:var(--measure)}
+
+  /* ---------- projects ---------- */
+  .project{
+    display:grid;
+    grid-template-columns:8rem 1fr;
+    gap:0 2rem;
+    padding:1.75rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .project:last-child{border-bottom:0;padding-bottom:0}
+  .when{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.75rem;color:var(--muted);padding-top:.45rem;
+  }
+  .project p{margin:.35rem 0 .75rem}
+  .stack{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.75rem;color:var(--muted);
+  }
+  @media (max-width:640px){
+    .project{grid-template-columns:1fr;gap:.35rem}
+    .when{padding-top:0}
+  }
+
+  /* ---------- about ---------- */
+  .about{background:var(--wash);border-top:1px solid var(--rule)}
+  .about .wrap{padding-top:3rem;padding-bottom:3rem}
+
+  footer{
+    padding:2.5rem 0 4rem;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.75rem;color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Jack Yi</h1>
+    <p class="standfirst">First-year chemical engineering at the University of Waterloo. I like problems where a process can be measured, then made better.</p>
+
+    <div class="scale" aria-hidden="true">
+      <i style="height:40%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i>
+      <i style="height:62%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i>
+      <i style="height:88%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i>
+      <i style="height:100%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i>
+      <i style="height:70%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i><i style="height:22%"></i>
+      <i style="height:45%"></i>
+    </div>
+
+    <ul class="contact">
+      <li><a href="mailto:YOUR-EMAIL@uwaterloo.ca">YOUR-EMAIL@uwaterloo.ca</a></li>
+      <li><a href="https://github.com/jckyii">github.com/jckyii</a></li>
+      <li><a href="YOUR-LINKEDIN-URL">LinkedIn</a></li>
+      <li><a href="resume.pdf">Resume (PDF)</a></li>
+    </ul>
+  </header>
+</div>
+
+<div class="wrap">
+  <section>
+    <h2>Things I've built</h2>
+
+    <div class="project">
+      <div class="when">2026</div>
+      <div>
+        <h3>Fraser River water quality report automator</h3>
+        <p>Pulls raw monitoring data from the BC Environmental Monitoring System, cleans it, and generates readable reports on how river water quality shifts over time. Built because the source data is public but nearly unusable in its raw form.</p>
+        <p class="stack">Python · pandas · Excel · <a href="ADD-YOUR-REPO-LINK">Source</a></p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="when">YEAR</div>
+      <div>
+        <h3>Second project title</h3>
+        <p>Two or three sentences. What problem it solved, what you actually did, and one thing that was harder than expected. Skip the adjectives — the specifics are what make this worth reading.</p>
+        <p class="stack">Tools used · <a href="ADD-LINK">Source</a></p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="when">YEAR</div>
+      <div>
+        <h3>Third project title</h3>
+        <p>Replace this. Three or four solid projects beat a dozen thin ones — a recruiter spends under a minute here.</p>
+        <p class="stack">Tools used · <a href="ADD-LINK">Source</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I'm in 1A chemical engineering at Waterloo, on the co-op program. I came to it through an interest in how things get made at scale — the gap between a reaction that works in a beaker and one that works in a plant.</p>
+    <p>Before this I spent five years doing graphic design and digital art, and picked up programming through AP Computer Science and a run of self-directed projects. That combination is why my work tends to end up somewhere between data and how it gets presented.</p>
+    <p>Right now I'm looking for my first co-op work term. If you're hiring, or you just want to talk about something here, my inbox is open.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <footer>Last updated MONTH YEAR · Built and hosted with GitHub Pages</footer>
+</div>
+
+</body>
+</html>
